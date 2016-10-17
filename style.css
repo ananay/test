@@ -1,13 +1,126 @@
 body {
 	overflow: hidden;
 }
+ * {
+  margin: 0;
+  padding: 0;
+}
+ header {
+ 	height:110px;
+ 	width: 100%;
+ 	background-color: transparent;
+ 	right: 0;
+ 	top: 0;
+ 	z-index: 1;
+ 	position: fixed;
+ 	transition:all .5s ease;
+ 	-webkit-transition:all .5s ease;
+ }
+html,body {
+  background-image: url(comeon.jpg);
+  overflow-x:hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nav {
+right:650px;
+margin-top: 40px;
+color: #fff;
+z-index: 3;
+position: fixed;
 
-#header {
-	position: absolute;
+}
+.over {
+	height: 100%;
+	width: 100%;
+	background: rgba(45,47,67,0.9);
+	position: absolute;;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 40px;
-	background: transparent;
-	border: 2px solid #fff;
+}
+ul {
+	list-style: none;
+}
+
+li {
+	font-family: Raleway;
+	font-size: 21px;
+	margin-right: 60px;
+	font-weight: 200;
+	float: left;
+}
+
+li:hover {
+	cursor:pointer;
+}
+
+.lhome {
+	width: 0px;
+	height: 2px;
+	top: 31px;
+	background: #fff;
+    position: relative;
+    transition:all .5s ease;
+    -webkit-transition:all .5s ease;
+}
+.llel {
+	width: 0px;
+	height: 2px;
+	top: 31px;
+	background: #fff;
+    position: relative;
+    transition:all .5s ease;
+    -webkit-transition:all .5s ease;
+}
+
+.llol {
+	width: 0px;
+	height: 2px;
+	top: 31px;
+	background: #fff;
+    position: relative;
+    transition:all .5s ease;
+    -webkit-transition:all .5s ease;
+}
+.lel {
+	width: 0px;
+	height: 2px;
+	top: 31px;
+	background: #fff;
+	position: relative;
+	transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+}
+li:hover .lel {
+	width: 52px;
+}
+li:hover .lhome {
+ width: 59px;
+}
+li:hover .llel {
+ width: 100px;
+}
+
+li:hover .llol {
+ width: 86px;
+}
+
+.button {
+	width: 170px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #1FBF66;
+	color: #fff;
+	margin-top: 32px;
+	border-color: #1FBF66;
+	display: block;
+	font-family: Raleway;
+	font-weight: bold;
+	font-size: 19px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right: 20px;
+
 }
